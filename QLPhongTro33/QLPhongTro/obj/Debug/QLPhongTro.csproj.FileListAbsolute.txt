@@ -25,3 +25,7 @@ F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.pdb
 F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.frmPhong.resources
 F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FrmDichVu.resources
 F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.frmXuLyPhong.resources
+F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FrmAddKhach.resources
+F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FrmThanhToan.resources
+F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FrmXuLyThue.resources
+F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.frmThuePhong.resources

@@ -38,24 +38,22 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.grbContent = new System.Windows.Forms.GroupBox();
-            this.pnlRight = new System.Windows.Forms.Panel();
-            this.txtHo = new System.Windows.Forms.TextBox();
-            this.txtTenDem = new System.Windows.Forms.TextBox();
             this.txtTen = new System.Windows.Forms.TextBox();
+            this.txtTenDem = new System.Windows.Forms.TextBox();
             this.txtCMND = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.txtHKTT = new System.Windows.Forms.TextBox();
+            this.txtHo = new System.Windows.Forms.TextBox();
             this.txtQueQuan = new System.Windows.Forms.TextBox();
+            this.txtHKTT = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pnlRight = new System.Windows.Forms.Panel();
+            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
             this.grbContent.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
             this.SuspendLayout();
             // 
             // pblBottom
@@ -76,7 +74,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnHuy.BackColor = System.Drawing.Color.SteelBlue;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.Color.White;
             this.btnHuy.Location = new System.Drawing.Point(315, 244);
@@ -100,7 +98,7 @@
             // 
             // btnXacNhan
             // 
-            this.btnXacNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnXacNhan.BackColor = System.Drawing.Color.SteelBlue;
             this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXacNhan.ForeColor = System.Drawing.Color.White;
             this.btnXacNhan.Location = new System.Drawing.Point(196, 244);
@@ -139,7 +137,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lblTitle.Location = new System.Drawing.Point(47, 11);
+            this.lblTitle.Location = new System.Drawing.Point(22, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(112, 13);
             this.lblTitle.TabIndex = 1;
@@ -156,37 +154,12 @@
             // pnlTop
             // 
             this.pnlTop.Controls.Add(this.lblTitle);
-            this.pnlTop.Controls.Add(this.pictureBox1);
             this.pnlTop.Controls.Add(this.ptbExit);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(586, 30);
             this.pnlTop.TabIndex = 14;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.Image = global::QLPhongTro.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // ptbExit
-            // 
-            this.ptbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ptbExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbExit.Image = global::QLPhongTro.Properties.Resources.close;
-            this.ptbExit.Location = new System.Drawing.Point(554, 7);
-            this.ptbExit.Name = "ptbExit";
-            this.ptbExit.Size = new System.Drawing.Size(20, 20);
-            this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbExit.TabIndex = 0;
-            this.ptbExit.TabStop = false;
-            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
             // 
             // label2
             // 
@@ -212,7 +185,7 @@
             // 
             // grbContent
             // 
-            this.grbContent.BackColor = System.Drawing.Color.LightSlateGray;
+            this.grbContent.BackColor = System.Drawing.Color.SteelBlue;
             this.grbContent.Controls.Add(this.txtTen);
             this.grbContent.Controls.Add(this.txtTenDem);
             this.grbContent.Controls.Add(this.txtCMND);
@@ -237,21 +210,13 @@
             this.grbContent.TabStop = false;
             this.grbContent.Enter += new System.EventHandler(this.grbContent_Enter);
             // 
-            // pnlRight
+            // txtTen
             // 
-            this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlRight.Location = new System.Drawing.Point(586, 0);
-            this.pnlRight.Name = "pnlRight";
-            this.pnlRight.Size = new System.Drawing.Size(10, 324);
-            this.pnlRight.TabIndex = 12;
-            // 
-            // txtHo
-            // 
-            this.txtHo.Location = new System.Drawing.Point(131, 57);
-            this.txtHo.Name = "txtHo";
-            this.txtHo.Size = new System.Drawing.Size(71, 20);
-            this.txtHo.TabIndex = 1;
-            this.txtHo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTen.Location = new System.Drawing.Point(421, 57);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(63, 20);
+            this.txtTen.TabIndex = 3;
+            this.txtTen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtTenDem
             // 
@@ -261,14 +226,6 @@
             this.txtTenDem.TabIndex = 2;
             this.txtTenDem.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // txtTen
-            // 
-            this.txtTen.Location = new System.Drawing.Point(421, 57);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(63, 20);
-            this.txtTen.TabIndex = 3;
-            this.txtTen.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // txtCMND
             // 
             this.txtCMND.Location = new System.Drawing.Point(130, 92);
@@ -277,16 +234,29 @@
             this.txtCMND.TabIndex = 4;
             this.txtCMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label6
+            // txtHo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(224, 60);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Tên Đệm";
+            this.txtHo.Location = new System.Drawing.Point(131, 57);
+            this.txtHo.Name = "txtHo";
+            this.txtHo.Size = new System.Drawing.Size(71, 20);
+            this.txtHo.TabIndex = 1;
+            this.txtHo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtQueQuan
+            // 
+            this.txtQueQuan.Location = new System.Drawing.Point(131, 164);
+            this.txtQueQuan.Name = "txtQueQuan";
+            this.txtQueQuan.Size = new System.Drawing.Size(353, 20);
+            this.txtQueQuan.TabIndex = 6;
+            this.txtQueQuan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtHKTT
+            // 
+            this.txtHKTT.Location = new System.Drawing.Point(131, 194);
+            this.txtHKTT.Name = "txtHKTT";
+            this.txtHKTT.Size = new System.Drawing.Size(353, 20);
+            this.txtHKTT.TabIndex = 7;
+            this.txtHKTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label7
             // 
@@ -299,21 +269,37 @@
             this.label7.TabIndex = 8;
             this.label7.Text = "Tên";
             // 
-            // txtHKTT
+            // label6
             // 
-            this.txtHKTT.Location = new System.Drawing.Point(131, 194);
-            this.txtHKTT.Name = "txtHKTT";
-            this.txtHKTT.Size = new System.Drawing.Size(353, 20);
-            this.txtHKTT.TabIndex = 7;
-            this.txtHKTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(224, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(58, 13);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Tên Đệm";
             // 
-            // txtQueQuan
+            // pnlRight
             // 
-            this.txtQueQuan.Location = new System.Drawing.Point(131, 164);
-            this.txtQueQuan.Name = "txtQueQuan";
-            this.txtQueQuan.Size = new System.Drawing.Size(353, 20);
-            this.txtQueQuan.TabIndex = 6;
-            this.txtQueQuan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlRight.Location = new System.Drawing.Point(586, 0);
+            this.pnlRight.Name = "pnlRight";
+            this.pnlRight.Size = new System.Drawing.Size(10, 324);
+            this.pnlRight.TabIndex = 12;
+            // 
+            // ptbExit
+            // 
+            this.ptbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbExit.Image = global::QLPhongTro.Properties.Resources.close;
+            this.ptbExit.Location = new System.Drawing.Point(554, 7);
+            this.ptbExit.Name = "ptbExit";
+            this.ptbExit.Size = new System.Drawing.Size(20, 20);
+            this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbExit.TabIndex = 0;
+            this.ptbExit.TabStop = false;
+            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
             // 
             // FrmAddKhach
             // 
@@ -330,10 +316,9 @@
             this.Text = "FrmAddKhach";
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             this.grbContent.ResumeLayout(false);
             this.grbContent.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -348,7 +333,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.PictureBox ptbExit;

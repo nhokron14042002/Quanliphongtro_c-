@@ -133,6 +133,51 @@ namespace QLPhongTro.ChildForm
         {
             this.Dispose();
         }
+
+        private void grbContent_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pblBottom_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlTop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnlRight_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 

@@ -46,18 +46,16 @@
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.pblBottom = new System.Windows.Forms.Panel();
+            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.grbContent.SuspendLayout();
             this.pnlTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
             this.SuspendLayout();
             // 
             // grbContent
             // 
-            this.grbContent.BackColor = System.Drawing.Color.LightSlateGray;
+            this.grbContent.BackColor = System.Drawing.Color.SteelBlue;
             this.grbContent.Controls.Add(this.mtbNgayTra);
             this.grbContent.Controls.Add(this.mtbNgayThue);
             this.grbContent.Controls.Add(this.txtTienCoc);
@@ -106,7 +104,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnThem.BackColor = System.Drawing.Color.SteelBlue;
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Location = new System.Drawing.Point(364, 84);
             this.btnThem.Name = "btnThem";
@@ -118,7 +116,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnHuy.BackColor = System.Drawing.Color.SteelBlue;
             this.btnHuy.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.Color.White;
             this.btnHuy.Location = new System.Drawing.Point(238, 221);
@@ -142,7 +140,7 @@
             // 
             // btnXacNhan
             // 
-            this.btnXacNhan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnXacNhan.BackColor = System.Drawing.Color.SteelBlue;
             this.btnXacNhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXacNhan.ForeColor = System.Drawing.Color.White;
             this.btnXacNhan.Location = new System.Drawing.Point(130, 221);
@@ -216,6 +214,7 @@
             // 
             // pnlRight
             // 
+            this.pnlRight.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlRight.Location = new System.Drawing.Point(472, 30);
             this.pnlRight.Name = "pnlRight";
@@ -224,6 +223,7 @@
             // 
             // pnlLeft
             // 
+            this.pnlLeft.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 30);
             this.pnlLeft.Name = "pnlLeft";
@@ -232,8 +232,8 @@
             // 
             // pnlTop
             // 
+            this.pnlTop.BackColor = System.Drawing.Color.SteelBlue;
             this.pnlTop.Controls.Add(this.lblTitle);
-            this.pnlTop.Controls.Add(this.pictureBox1);
             this.pnlTop.Controls.Add(this.ptbExit);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTop.Location = new System.Drawing.Point(0, 0);
@@ -246,23 +246,21 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(47, 11);
+            this.lblTitle.Location = new System.Drawing.Point(12, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(111, 13);
             this.lblTitle.TabIndex = 1;
             this.lblTitle.Text = "Khách thuê phòng";
             this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
-            // pictureBox1
+            // pblBottom
             // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.pictureBox1.Image = global::QLPhongTro.Properties.Resources.logo;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 27);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pblBottom.BackColor = System.Drawing.Color.SteelBlue;
+            this.pblBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pblBottom.Location = new System.Drawing.Point(0, 305);
+            this.pblBottom.Name = "pblBottom";
+            this.pblBottom.Size = new System.Drawing.Size(482, 12);
+            this.pblBottom.TabIndex = 10;
             // 
             // ptbExit
             // 
@@ -276,14 +274,6 @@
             this.ptbExit.TabIndex = 0;
             this.ptbExit.TabStop = false;
             this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
-            // 
-            // pblBottom
-            // 
-            this.pblBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pblBottom.Location = new System.Drawing.Point(0, 305);
-            this.pblBottom.Name = "pblBottom";
-            this.pblBottom.Size = new System.Drawing.Size(482, 12);
-            this.pblBottom.TabIndex = 10;
             // 
             // FrmXuLyThue
             // 
@@ -305,7 +295,6 @@
             this.grbContent.PerformLayout();
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
             this.ResumeLayout(false);
 
@@ -324,7 +313,6 @@
         private System.Windows.Forms.Panel pnlLeft;
         private System.Windows.Forms.Panel pnlTop;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox ptbExit;
         private System.Windows.Forms.Panel pblBottom;
         private System.Windows.Forms.Label label4;

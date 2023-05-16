@@ -119,7 +119,7 @@
             // btnThem
             // 
             this.btnThem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThem.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnThem.BackColor = System.Drawing.Color.SteelBlue;
             this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem.ForeColor = System.Drawing.Color.White;
             this.btnThem.Location = new System.Drawing.Point(434, 66);
@@ -133,7 +133,7 @@
             // btnSua
             // 
             this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSua.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnSua.BackColor = System.Drawing.Color.SteelBlue;
             this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.ForeColor = System.Drawing.Color.White;
             this.btnSua.Location = new System.Drawing.Point(515, 66);
@@ -147,7 +147,7 @@
             // btnLuu
             // 
             this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnLuu.BackColor = System.Drawing.Color.SteelBlue;
             this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Location = new System.Drawing.Point(596, 66);
@@ -161,7 +161,7 @@
             // btnXoa
             // 
             this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.BackColor = System.Drawing.Color.LightSlateGray;
+            this.btnXoa.BackColor = System.Drawing.Color.SteelBlue;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(677, 65);
@@ -176,7 +176,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(858, 441);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnLuu);

@@ -40,8 +40,8 @@
             // 
             // dgvPhong
             // 
-            this.dgvPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dgvPhong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvPhong.BackgroundColor = System.Drawing.Color.White;
             this.dgvPhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -79,7 +79,7 @@
             // btnTimKiem
             // 
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTimKiem.BackColor = System.Drawing.Color.SteelBlue;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Location = new System.Drawing.Point(477, 70);
@@ -93,7 +93,7 @@
             // btnThemMoi
             // 
             this.btnThemMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemMoi.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThemMoi.BackColor = System.Drawing.Color.SteelBlue;
             this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemMoi.ForeColor = System.Drawing.Color.White;
             this.btnThemMoi.Location = new System.Drawing.Point(588, 70);
@@ -107,7 +107,7 @@
             // btnXoa
             // 
             this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnXoa.BackColor = System.Drawing.Color.SteelBlue;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.ForeColor = System.Drawing.Color.White;
             this.btnXoa.Location = new System.Drawing.Point(696, 70);
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThemMoi);

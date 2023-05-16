@@ -116,6 +116,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildForm\FrmAddKhach.resx">
+      <DependentUpon>FrmAddKhach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\FrmDichVu.resx">
       <DependentUpon>FrmDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,11 +128,20 @@
     <EmbeddedResource Include="ChildForm\frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\FrmThanhToan.resx">
+      <DependentUpon>FrmThanhToan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmThuePhong.resx">
+      <DependentUpon>frmThuePhong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmWelcome.resx">
       <DependentUpon>frmWelcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmXuLyPhong.resx">
       <DependentUpon>frmXuLyPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\FrmXuLyThue.resx">
+      <DependentUpon>FrmXuLyThue.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>

@@ -53,7 +53,7 @@
             // 
             // btnThueMoi
             // 
-            this.btnThueMoi.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnThueMoi.BackColor = System.Drawing.Color.SteelBlue;
             this.btnThueMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThueMoi.ForeColor = System.Drawing.Color.White;
             this.btnThueMoi.Location = new System.Drawing.Point(395, 95);
@@ -66,7 +66,7 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnTimKiem.BackColor = System.Drawing.Color.SteelBlue;
             this.btnTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Location = new System.Drawing.Point(306, 95);
@@ -97,7 +97,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -110,8 +110,8 @@
             // 
             // dgvThuePhong
             // 
-            this.dgvThuePhong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.dgvThuePhong.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvThuePhong.BackgroundColor = System.Drawing.Color.White;
             this.dgvThuePhong.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -233,7 +233,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(759, 391);
             this.Controls.Add(this.btnThueMoi);
             this.Controls.Add(this.btnTimKiem);
