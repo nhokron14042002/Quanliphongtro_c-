@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChildForm\FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForm\FrmAddKhach.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
     </Compile>
     <Compile Include="ChildForm\frmPhong.Designer.cs">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\frmRePass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\frmRePass.Designer.cs">
+      <DependentUpon>frmRePass.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForm\FrmThanhToan.cs">
       <SubType>Form</SubType>
@@ -114,8 +126,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="LuuTru.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ChildForm\FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\FrmAddKhach.resx">
       <DependentUpon>FrmAddKhach.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\frmRePass.resx">
+      <DependentUpon>frmRePass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\FrmThanhToan.resx">
       <DependentUpon>FrmThanhToan.cs</DependentUpon>

@@ -95,6 +95,26 @@ namespace QLPhongTro.ChildForm
                     new FrmThanhToan(IDThuePhong).ShowDialog();
 
                 }
+
+
+                if (e.ColumnIndex == dgvThuePhong.Columns["btnGiaHan"].Index)
+                {
+                    var IDThuePhong = dgvThuePhong.Rows[e.RowIndex].Cells["ID"].Value.ToString();
+                    var lstPra = new List<CustomParameter>
+                    {
+                        new CustomParameter
+                        {
+                            key = "@ID",
+                            value = IDThuePhong
+                        }
+                    };
+
+                    if (db.ExeCute("GiaHan", lstPra) == 1)
+                    {
+                        MessageBox.Show("Gia hạn thành công@!!!", "Successfully!!!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
+
+                }
             }
         }
     }

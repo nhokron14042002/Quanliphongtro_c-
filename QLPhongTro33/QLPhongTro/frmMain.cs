@@ -19,7 +19,15 @@ namespace QLPhongTro
         public frmMain()
         {
             InitializeComponent();
+            lock_unlock(LuuTru.Kt);
         }
+
+        void lock_unlock(bool kt)
+        {
+            htDN.Enabled = htThoat.Enabled = kt;
+            htKMH.Enabled=htDMK.Enabled= thongtin.Enabled = danhmuc.Enabled = tacvu.Enabled = thongke.Enabled = !kt;
+        }
+
 
         #region gui
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -110,6 +118,35 @@ namespace QLPhongTro
         private void thuêPhòngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var f = new frmThuePhong();
+            AddForm(f);
+        }
+
+        private void dangNhap_Click(object sender, EventArgs e)
+        {
+            var f = new FormDangNhap();
+            AddForm(f);
+        }
+
+        private void htThoat_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void htKMH_Click(object sender, EventArgs e)
+        {
+            LuuTru.Kt = !LuuTru.Kt;
+            LuuTru.Con.Close();
+            lock_unlock(LuuTru.Kt);
+        }
+
+        private void frmMain_Activated(object sender, EventArgs e)
+        {
+            lock_unlock(LuuTru.Kt);
+        }
+
+        private void htDMK_Click(object sender, EventArgs e)
+        {
+            var f = new frmRePass();
             AddForm(f);
         }
     }
