@@ -31,6 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.pnlTop = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.ptbMinimize = new System.Windows.Forms.PictureBox();
+            this.ptbState = new System.Windows.Forms.PictureBox();
+            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlRight = new System.Windows.Forms.Panel();
             this.pblBottom = new System.Windows.Forms.Panel();
@@ -58,14 +61,11 @@
             this.phiênBảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bảnQuyềnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.liênHệToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ptbMinimize = new System.Windows.Forms.PictureBox();
-            this.ptbState = new System.Windows.Forms.PictureBox();
-            this.ptbExit = new System.Windows.Forms.PictureBox();
             this.pnlTop.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbState)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTop
@@ -92,6 +92,45 @@
             this.label1.Size = new System.Drawing.Size(172, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Phần mềm quản lý phòng trọ ";
+            // 
+            // ptbMinimize
+            // 
+            this.ptbMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbMinimize.Image = global::QLPhongTro.Properties.Resources.minimazar;
+            this.ptbMinimize.Location = new System.Drawing.Point(809, 7);
+            this.ptbMinimize.Name = "ptbMinimize";
+            this.ptbMinimize.Size = new System.Drawing.Size(20, 20);
+            this.ptbMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbMinimize.TabIndex = 0;
+            this.ptbMinimize.TabStop = false;
+            this.ptbMinimize.Click += new System.EventHandler(this.ptbMinimize_Click);
+            // 
+            // ptbState
+            // 
+            this.ptbState.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbState.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbState.Image = global::QLPhongTro.Properties.Resources.maxi;
+            this.ptbState.Location = new System.Drawing.Point(835, 7);
+            this.ptbState.Name = "ptbState";
+            this.ptbState.Size = new System.Drawing.Size(20, 20);
+            this.ptbState.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbState.TabIndex = 0;
+            this.ptbState.TabStop = false;
+            this.ptbState.Click += new System.EventHandler(this.ptbState_Click);
+            // 
+            // ptbExit
+            // 
+            this.ptbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ptbExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ptbExit.Image = global::QLPhongTro.Properties.Resources.close;
+            this.ptbExit.Location = new System.Drawing.Point(859, 7);
+            this.ptbExit.Name = "ptbExit";
+            this.ptbExit.Size = new System.Drawing.Size(20, 20);
+            this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptbExit.TabIndex = 0;
+            this.ptbExit.TabStop = false;
+            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
             // 
             // pnlLeft
             // 
@@ -196,21 +235,21 @@
             // loaiPhongToolStripMenuItem
             // 
             this.loaiPhongToolStripMenuItem.Name = "loaiPhongToolStripMenuItem";
-            this.loaiPhongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loaiPhongToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.loaiPhongToolStripMenuItem.Text = "Loại phòng";
             this.loaiPhongToolStripMenuItem.Click += new System.EventHandler(this.loaiPhongToolStripMenuItem_Click);
             // 
             // phongToolStripMenuItem
             // 
             this.phongToolStripMenuItem.Name = "phongToolStripMenuItem";
-            this.phongToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phongToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.phongToolStripMenuItem.Text = "Phòng";
             this.phongToolStripMenuItem.Click += new System.EventHandler(this.phongToolStripMenuItem_Click);
             // 
             // dichVuToolStripMenuItem
             // 
             this.dichVuToolStripMenuItem.Name = "dichVuToolStripMenuItem";
-            this.dichVuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dichVuToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.dichVuToolStripMenuItem.Text = "Dịch vụ";
             this.dichVuToolStripMenuItem.Click += new System.EventHandler(this.dichVuToolStripMenuItem_Click);
             // 
@@ -235,6 +274,7 @@
             this.trảPhòngToolStripMenuItem.Name = "trảPhòngToolStripMenuItem";
             this.trảPhòngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.trảPhòngToolStripMenuItem.Text = "Trả phòng";
+            this.trảPhòngToolStripMenuItem.Click += new System.EventHandler(this.trảPhòngToolStripMenuItem_Click);
             // 
             // thongke
             // 
@@ -251,31 +291,31 @@
             // phòngĐangThuêToolStripMenuItem
             // 
             this.phòngĐangThuêToolStripMenuItem.Name = "phòngĐangThuêToolStripMenuItem";
-            this.phòngĐangThuêToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phòngĐangThuêToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.phòngĐangThuêToolStripMenuItem.Text = "Phòng đang thuê";
             // 
             // phòngTrốngToolStripMenuItem
             // 
             this.phòngTrốngToolStripMenuItem.Name = "phòngTrốngToolStripMenuItem";
-            this.phòngTrốngToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phòngTrốngToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.phòngTrốngToolStripMenuItem.Text = "Phòng trống";
             // 
             // tiềnĐiệnToolStripMenuItem
             // 
             this.tiềnĐiệnToolStripMenuItem.Name = "tiềnĐiệnToolStripMenuItem";
-            this.tiềnĐiệnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tiềnĐiệnToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.tiềnĐiệnToolStripMenuItem.Text = "Tiền điện";
             // 
             // tiềnNướcToolStripMenuItem
             // 
             this.tiềnNướcToolStripMenuItem.Name = "tiềnNướcToolStripMenuItem";
-            this.tiềnNướcToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.tiềnNướcToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.tiềnNướcToolStripMenuItem.Text = "Tiền nước";
             // 
             // doanhThuToolStripMenuItem
             // 
             this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.doanhThuToolStripMenuItem.Text = "Doanh thu";
             // 
             // thongtin
@@ -291,59 +331,20 @@
             // phiênBảnToolStripMenuItem
             // 
             this.phiênBảnToolStripMenuItem.Name = "phiênBảnToolStripMenuItem";
-            this.phiênBảnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.phiênBảnToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.phiênBảnToolStripMenuItem.Text = "Phiên bản";
             // 
             // bảnQuyềnToolStripMenuItem
             // 
             this.bảnQuyềnToolStripMenuItem.Name = "bảnQuyềnToolStripMenuItem";
-            this.bảnQuyềnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.bảnQuyềnToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.bảnQuyềnToolStripMenuItem.Text = "Bản quyền";
             // 
             // liênHệToolStripMenuItem
             // 
             this.liênHệToolStripMenuItem.Name = "liênHệToolStripMenuItem";
-            this.liênHệToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.liênHệToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.liênHệToolStripMenuItem.Text = "Liên hệ";
-            // 
-            // ptbMinimize
-            // 
-            this.ptbMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ptbMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbMinimize.Image = global::QLPhongTro.Properties.Resources.minimazar;
-            this.ptbMinimize.Location = new System.Drawing.Point(809, 7);
-            this.ptbMinimize.Name = "ptbMinimize";
-            this.ptbMinimize.Size = new System.Drawing.Size(20, 20);
-            this.ptbMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbMinimize.TabIndex = 0;
-            this.ptbMinimize.TabStop = false;
-            this.ptbMinimize.Click += new System.EventHandler(this.ptbMinimize_Click);
-            // 
-            // ptbState
-            // 
-            this.ptbState.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ptbState.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbState.Image = global::QLPhongTro.Properties.Resources.maxi;
-            this.ptbState.Location = new System.Drawing.Point(835, 7);
-            this.ptbState.Name = "ptbState";
-            this.ptbState.Size = new System.Drawing.Size(20, 20);
-            this.ptbState.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbState.TabIndex = 0;
-            this.ptbState.TabStop = false;
-            this.ptbState.Click += new System.EventHandler(this.ptbState_Click);
-            // 
-            // ptbExit
-            // 
-            this.ptbExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ptbExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ptbExit.Image = global::QLPhongTro.Properties.Resources.close;
-            this.ptbExit.Location = new System.Drawing.Point(859, 7);
-            this.ptbExit.Name = "ptbExit";
-            this.ptbExit.Size = new System.Drawing.Size(20, 20);
-            this.ptbExit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptbExit.TabIndex = 0;
-            this.ptbExit.TabStop = false;
-            this.ptbExit.Click += new System.EventHandler(this.ptbExit_Click);
             // 
             // frmMain
             // 
@@ -366,11 +367,11 @@
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.pnlTop.ResumeLayout(false);
             this.pnlTop.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptbMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbState)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptbExit)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

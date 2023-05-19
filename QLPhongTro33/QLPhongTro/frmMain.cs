@@ -14,7 +14,7 @@ namespace QLPhongTro
     public partial class frmMain : Form
     {
 
-
+     
 
         public frmMain()
         {
@@ -27,7 +27,8 @@ namespace QLPhongTro
             htDN.Enabled = htThoat.Enabled = kt;
             htKMH.Enabled=htDMK.Enabled= thongtin.Enabled = danhmuc.Enabled = tacvu.Enabled = thongke.Enabled = !kt;
         }
-
+        
+     
 
         #region gui
         public const int WM_NCLBUTTONDOWN = 0xA1;
@@ -147,6 +148,13 @@ namespace QLPhongTro
         private void htDMK_Click(object sender, EventArgs e)
         {
             var f = new frmRePass();
+            AddForm(f);
+            
+        }
+
+        private void trảPhòngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new FrmTraPhong();
             AddForm(f);
         }
     }
