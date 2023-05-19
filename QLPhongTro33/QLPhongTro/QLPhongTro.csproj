@@ -59,6 +59,12 @@
     <Compile Include="ChildForm\FrmAddKhach.Designer.cs">
       <DependentUpon>FrmAddKhach.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChildForm\FrmDangThue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\FrmDangThue.Designer.cs">
+      <DependentUpon>FrmDangThue.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChildForm\FrmDichVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,12 @@
     </Compile>
     <Compile Include="ChildForm\frmPhong.Designer.cs">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildForm\FrmPhongTrong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildForm\FrmPhongTrong.Designer.cs">
+      <DependentUpon>FrmPhongTrong.cs</DependentUpon>
     </Compile>
     <Compile Include="ChildForm\frmRePass.cs">
       <SubType>Form</SubType>
@@ -141,6 +153,9 @@
     <EmbeddedResource Include="ChildForm\FrmAddKhach.resx">
       <DependentUpon>FrmAddKhach.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\FrmDangThue.resx">
+      <DependentUpon>FrmDangThue.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\FrmDichVu.resx">
       <DependentUpon>FrmDichVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -149,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmPhong.resx">
       <DependentUpon>frmPhong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildForm\FrmPhongTrong.resx">
+      <DependentUpon>FrmPhongTrong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChildForm\frmRePass.resx">
       <DependentUpon>frmRePass.cs</DependentUpon>
@@ -210,10 +228,10 @@
     <None Include="Resources\res.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo.png" />
+    <None Include="Resources\logo1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\logo1.png" />
+    <None Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

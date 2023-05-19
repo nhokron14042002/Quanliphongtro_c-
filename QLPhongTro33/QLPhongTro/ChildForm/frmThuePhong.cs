@@ -95,7 +95,7 @@ namespace QLPhongTro.ChildForm
                     new FrmThanhToan(IDThuePhong).ShowDialog();
 
                 }
-
+               
 
                 if (e.ColumnIndex == dgvThuePhong.Columns["btnGiaHan"].Index)
                 {
@@ -111,10 +111,15 @@ namespace QLPhongTro.ChildForm
 
                     if (db.ExeCute("GiaHan", lstPra) == 1)
                     {
+
                         MessageBox.Show("Gia hạn thành công@!!!", "Successfully!!!",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                       
                     }
 
                 }
+
+                LoadDSThuePhong();
             }
         }
     }

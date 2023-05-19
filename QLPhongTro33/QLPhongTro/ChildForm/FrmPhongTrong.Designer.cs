@@ -1,6 +1,6 @@
 ﻿namespace QLPhongTro.ChildForm
 {
-    partial class frmPhong
+    partial class FrmPhongTrong
     {
         /// <summary>
         /// Required designer variable.
@@ -33,8 +33,6 @@
             this.txtTìmKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnThemMoi = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -95,56 +93,26 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(34, 29);
+            this.label2.Location = new System.Drawing.Point(22, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(175, 13);
+            this.label2.Size = new System.Drawing.Size(179, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "DANH SÁCH PHÒNG TRỐNG";
+            this.label2.Text = "QUẢN LÝ DANH MỤC PHÒNG";
             this.label2.Click += new System.EventHandler(this.label1_Click);
             // 
-            // btnThemMoi
-            // 
-            this.btnThemMoi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemMoi.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnThemMoi.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemMoi.ForeColor = System.Drawing.Color.White;
-            this.btnThemMoi.Location = new System.Drawing.Point(588, 70);
-            this.btnThemMoi.Name = "btnThemMoi";
-            this.btnThemMoi.Size = new System.Drawing.Size(92, 22);
-            this.btnThemMoi.TabIndex = 3;
-            this.btnThemMoi.Text = "Thêm Mới";
-            this.btnThemMoi.UseVisualStyleBackColor = false;
-            this.btnThemMoi.Click += new System.EventHandler(this.btnThemMoi_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(696, 70);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(92, 22);
-            this.btnXoa.TabIndex = 3;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // frmPhong
+            // FrmPhongTrong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnThemMoi);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.txtTìmKiem);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvPhong);
-            this.Name = "frmPhong";
-            this.Text = "frmPhong";
+            this.Name = "FrmPhongTrong";
+            this.Text = "frmPhongTrong";
             this.Load += new System.EventHandler(this.frmPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPhong)).EndInit();
             this.ResumeLayout(false);
@@ -159,7 +127,5 @@
         private System.Windows.Forms.TextBox txtTìmKiem;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnThemMoi;
-        private System.Windows.Forms.Button btnXoa;
     }
 }

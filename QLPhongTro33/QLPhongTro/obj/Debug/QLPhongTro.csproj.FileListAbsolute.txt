@@ -32,3 +32,5 @@ F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.frmThuePhong.resources
 F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FormDangNhap.resources
 F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.frmRePass.resources
 F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FrmTraPhong.resources
+F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FrmDangThue.resources
+F:\QLPhongTro33\QLPhongTro\obj\Debug\QLPhongTro.ChildForm.FrmPhongTrong.resources

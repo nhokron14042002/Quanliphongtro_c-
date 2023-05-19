@@ -157,5 +157,19 @@ namespace QLPhongTro
             var f = new FrmTraPhong();
             AddForm(f);
         }
+
+        private void phòngĐangThuêToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            var f = new FrmDangThue();
+            AddForm(f);
+        }
+
+        private void phòngTrốngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+            var f = new FrmPhongTrong();
+            AddForm(f);
+        }
     }
 }
